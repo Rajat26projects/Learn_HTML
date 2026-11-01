@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attributr Selector</title>
+  <style>
+    /* Attribute selector */
+    input[type="text"]{
+      background:gray;
+      color:red;
+    }
+
+    input[type="password"]{
+      background:rgb(213,74,74);
+      color:rgb(88,93,236);
+    }
+
+    input[type="submit"]{
+      background:green;
+      color:rgb(16,12,12);
+
+    }
+
+    label[formlabel="ulabel"]{
+      color:gray;
+      text-shadow:2px 2px green;
+    }
+
+    label[for="pws"]{
+      color:red;
+      text-shadow:1px 1px green;
+    }
+
+    form[id="login"]{
+      border: 2px dashed gray;
+      padding:10px;
+      margin:20px;
+    }
+  </style>
+</head>
+<body>
+  <form action="" id="login">
+    <label formlabbel="ulabel" for="">Username</label><br>
+    <input type="text" name="uname"><br><br>
+
+    <label for="pws">password</label><br>
+    <input type="password" name="'pws" id="pws"><br><br>
+
+    <input  type="submit">
+  </form>
+</body>
+</html>
