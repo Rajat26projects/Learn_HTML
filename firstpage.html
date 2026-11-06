@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Object Model</title>
+</head>
+<body>
+  <div id="fdiv"></div>
+  <div id="fdiv"></div>
+  <p class="para">1. paragraph </p>
+  <p class="para">2. paragraph </p>
+  <p class="para">3. paragraph </p>
+<p class="para">4. paragraph </p>
+
+<h1>heading 1</h1>
+<h1>heading 2</h1>
+<h1>heading 3</h1>
+
+<script>
+  //getElementById():Returns elements with a specific ID.
+  document.getElementById('fdiv').innerHTML="welcome";
+  document.getElementById('fdiv').style.color="red";
+  document.getElementById('fdiv').style.fontSize="45px";
+
+  //getElementByClassName(): Returns elements with specified class names.
+  document.getElementsByClassName('para')[2].style.color='green';
+
+  //getElementsByTagName(): returns elements by tag name.
+  document.getElementsByTagName('h1')[2].style.background="pink";
+
+  //querySelector(): returns the first element matching a css selector.
+  document.querySelector('h1').style.color="yellow";
+
+  //querySelectorAll(): Return a collection of child elements matching a css selector
+
+  document.querySelectorAll('h1')[0].style.fontSize="55px";
+
+</script>
+
+</body>
+</html>
