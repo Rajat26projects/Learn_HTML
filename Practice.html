@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab</title>
+  <style>
+
+
+div>p{
+  color:brown
+}
+
+div+p{
+color:green;
+}
+
+div~p{
+  color:pink;
+}
+    #h1::first-letter{
+      color:brown;
+      font-size: 50px;
+    }
+
+    input[type="date"]{
+      color:rgb(249, 249, 5);
+      background-color:rgb(137, 175, 114);
+    }
+
+    p[plabel="ulabel"]{
+      color:red;
+      background-color: black;
+    }
+
+    input[type="text"]{
+
+    }
+    #p1::first-line{
+color:darkgoldenrod;
+font-size:30px;
+    }
+
+   ::selection{
+    background:yellow;
+    color:red;
+   }
+    #h1:hover{
+color:red;
+background:yellow;
+    }
+#name{
+  color:red;
+  background-color: yellow;
+}
+
+#pass{
+  background-color: aqua;
+  color:black;
+}
+
+#img1{
+  height:150px;
+  width:150px;
+  border: 10px solid black;
+}
+
+#img1:hover{
+  height:300 px;
+  width:300px;
+   border:15px soliid blue;
+}
+
+#div1{
+  height:100px;
+  width:100px;
+  background-color:aqua;
+  border-top: 10px solid blue;
+  border-bottom: 10px solid blueviolet;
+  border-left:10px solid yellowgreen;
+  border-right:10px solid red;
+
+    padding:10px 15px 20px 25px; 
+
+}
+
+#indiv{
+  height:30px;
+  width:30px;
+  background-color: blue;
+
+  margin:10px 20px 30px 40px;
+ 
+}
+  </style>
+</head>
+<body>
+  <h1 id="h1">Heading1</h1>
+  <img src="./images/Madhya-Pradesh_Indore_Rajwada-Palace.avif" id="img1"></body><img><br><br>
+  <a href="www.google.com" target="./blank">Google</a>
+
+  <form>
+    <label for="" id="form"><b><i>Form</i></b></label><br><br>
+   Name: <input type="text" placeholder="Enter your name" id="name"><br><br>
+   password:<input type="password" placeholder="Enter your Password" id="pass"><br><br>
+DOB:<input type="date"><br><br>
+   <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi blanditiis officia nihil iusto expedita dolorum provident repellat minima magni quod quis, nobis, doloribus, facere ab eos vitae eum! Necessitatibus, tempora?</p>
+
+   <p  plabel="ulabel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur deserunt culpa nobis ad perferendis repudiandae excepturi esse. Id voluptatum quo accusantium voluptatibus accusamus ea, iusto magni non perspiciatis maxime consequuntur!</p>
+
+   <div id="div1">
+  <div id="indiv"></div>
+   </div>
+
+   <div>
+    <p>1. This is 1st child</p><br>
+    <p>2. This is 2nd child</p><br>
+<span>
+   <p>1.1 This is 1st's 1st child</p><br>
+    <p>2.1 This is 1st's 2nd child</p><br>
+</span>
+   </div>
+   <p>3. This is third child</p>
+   
+  </form>
+</body>
+</html>
