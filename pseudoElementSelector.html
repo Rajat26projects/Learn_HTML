@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pseudoElementSelector</title>
+  <style>
+    h1::first-letter{
+      color:red;
+      font-size:65px;
+      text-transform:uppercase;
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    }
+    p::first-line{
+      color:green;
+      font-size:33px;
+    }
+    ul li{
+      list-style-type:none;
+    }
+    p::after{
+      content:"...";
+      color:green;
+      font-size:35px;
+    }
+
+    ::selection{
+      background:black;
+      color:red;
+    }
+  </style>
+</head>
+<body>
+  <h1>heading 1</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ab, quam autem mollitia voluptas sed eum fugit aut. Voluptate vitae culpa velit. Quasi ullam ipsum distinctio repellat aspernatur culpa iusto?</p>
+
+  <h1>heading 1</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ab, quam autem mollitia voluptas sed eum fugit aut. Voluptate vitae culpa velit. Quasi ullam ipsum distinctio repellat aspernatur culpa iusto?</p>
+
+  <h1>heading 1</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ab, quam autem mollitia voluptas sed eum fugit aut. Voluptate vitae culpa velit. Quasi ullam ipsum distinctio repellat aspernatur culpa iusto?</p>
+
+  <ul>
+    <li>India</li>
+    <li>Nepal</li>
+    <li>Bhutan</li>
+    <li>USA</li>
+  </ul>
+</body>
+</html>
